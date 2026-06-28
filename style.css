@@ -99,7 +99,7 @@ p {
     display: flex;
     align-items: center;
     background: url('assets/hero_bg.png') no-repeat center center/cover;
-    padding-top: 130px;
+    padding-top: 180px;
 }
 
 .hero-bg-overlay {
@@ -321,7 +321,7 @@ p {
     .hero-content {
         flex-direction: column;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 80px;
     }
     
     .hero-bg-overlay {
