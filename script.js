@@ -23,6 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Handle form submission
+    const waitlistForm = document.getElementById('waitlist-form');
+    const successMsg = document.getElementById('success-msg');
+    if (waitlistForm) {
+        waitlistForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // In a real app, you would send the data to a server here.
+            waitlistForm.style.display = 'none';
+            successMsg.style.display = 'block';
+            
+            // Optionally close modal after a few seconds
+            setTimeout(() => {
+                modal.classList.remove('active');
+                // Reset form for next time
+                waitlistForm.reset();
+                waitlistForm.style.display = 'flex';
+                successMsg.style.display = 'none';
+            }, 3000);
+        });
+    }
+
     // Close modal on click outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {

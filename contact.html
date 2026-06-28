@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Yu Sleep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content { padding: 120px 20px 60px; max-width: 600px; margin: 0 auto; }
+        .page-content h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .page-content p { margin-bottom: 30px; }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration:none;">Yu<span>Sleep</span></a>
+        </div>
+    </nav>
+    <main class="page-content">
+        <h1>Contact Us</h1>
+        <p>Have questions about Yu Sleep or our promotions? Fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you soon.'); this.reset();">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </main>
+</body>
+</html>
