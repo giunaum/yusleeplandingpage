@@ -11,12 +11,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Advertorial/Affiliate Disclaimer Top Bar -->
-    <div style="background-color: #1a1e29; color: var(--text-secondary); text-align: center; padding: 8px; font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.1); width: 100%; position: relative; z-index: 100;">
-        <strong>ADVERTISEMENT / AFFILIATE DISCLOSURE:</strong> This is an independent promotional page, not the official Yu Sleep website. We may receive compensation for purchases made through links on this page.
+    <div class="header-wrapper" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 10;">
+        <!-- Advertorial/Affiliate Disclaimer Top Bar -->
+        <div style="background-color: #1a1e29; color: var(--text-secondary); text-align: center; padding: 8px; font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.1); width: 100%;">
+            <strong>ADVERTISEMENT / AFFILIATE DISCLOSURE:</strong> This is an independent promotional page, not the official Yu Sleep website. We may receive compensation for purchases made through links on this page.
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" style="position: relative; top: 0;">
+            <div class="container">
+                <div class="logo">Sleep<span>Wellness</span></div>
+            </div>
+        </nav>
     </div>
 
     <!-- Modal -->
+
     <div id="affiliateModal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-modal" aria-label="Close modal">&times;</button>
@@ -34,13 +44,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Navigation -->
-    <nav class="navbar" style="top: 35px;">
-        <div class="container">
-            <div class="logo">Sleep<span>Wellness</span></div>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
     <header class="hero">
